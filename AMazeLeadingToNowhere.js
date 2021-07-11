@@ -1,8 +1,7 @@
 let x = 0;
 let y = 0;
 let spacing = 12;
-let i = 10;
-let speed = 2;
+
 
 function setup() 
 {
