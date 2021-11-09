@@ -1,0 +1,43 @@
+<html>
+<body>
+	<canvas width = "600" height = "600"> </canvas>
+
+
+	<script>
+
+		let canvas = document.querySelector('canvas');
+		let context = canvas.getContext('2d');
+
+
+		context.lineWidth = 4;
+
+
+		for(let i = 0; i < 5; i++)
+		{
+			for( let j = 0; j < 5; j++)
+			{
+
+				const height = 50;
+				const width = 50;
+				const gap = 20;
+				let x = 100 + (width + gap) * i;
+				let y = 100 + (height + gap) * j;
+
+				context.beginPath();
+				context.rect(x, y, height, width);
+				context.stroke();
+
+				if (Math.random(1) > 0.5)
+				{
+					context.beginPath();
+					context.arc(x + 25, y + 25, 17, 0, Math.PI * 2);
+					context.stroke();
+				}
+				
+			}
+		}
+		
+
+	</script>
+</body>
+</html>
