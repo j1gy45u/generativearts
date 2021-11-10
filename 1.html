@@ -1,0 +1,85 @@
+<html>
+<body>
+	<canvas width = "1200" height = "1200"> </canvas>
+
+
+	<script>
+
+		let canvas = document.querySelector('canvas');
+		let context = canvas.getContext('2d');
+
+
+		context.fillStyle = '#00203FFF';
+    context.fillRect(0, 0, 1200, 1200);
+
+    
+    //first layer
+    context.fillStyle = '#BC2732';
+    context.fillRect(200, 200, 800, 800)
+
+    context.translate(200, 1000);
+
+    //building's prototype
+   
+       let a = Math.random() * 500;
+       context.fillStyle = 'grey';
+       context.fillRect(40, 0, 100, -a);
+
+       //context.translate(100, 500);
+       let b = Math.random() * 500;
+       context.fillStyle = 'grey';
+       context.fillRect(180, 0, 100, -b);
+
+       //context.translate(100, 500);
+       let c = Math.random() * 250;
+       context.fillStyle = 'grey';
+       context.fillRect(320, 0, 100, -c);
+
+       //context.translate(100, 500);
+       let d = Math.random() * 500;
+       context.fillStyle = 'grey';
+       context.fillRect(460, 0, 100, -d);
+       
+       let e = Math.random() * 500;
+       context.fillStyle = 'grey';
+       context.fillRect(600, 0, 100, -e);
+
+       let f = Math.random() * 500;
+       context.fillStyle = 'grey';
+       context.fillRect(740, 0, 60, -f);
+
+       let g = Math.random() * 500;
+       context.fillStyle = 'black';
+       context.fillRect(0, 0, 100, -g);
+
+       let h = Math.random() * 500;
+       context.fillStyle = 'black';
+       context.fillRect(140, 0, 100, -h);
+
+       let i = Math.random() * 500;
+       context.fillStyle = 'black';
+       context.fillRect(280, 0, 100, -i);
+
+       let j = Math.random() * 500;
+       context.fillStyle = 'black';
+       context.fillRect(420, 0, 100, -j);
+
+       let k = Math.random() * 500;
+       context.fillStyle = 'black';
+       context.fillRect(560, 0, 100, -k);
+
+       let l = Math.random() * 500;
+       context.fillStyle = 'black';
+       context.fillRect(700, 0, 100, -l);
+
+
+      //sun
+      context.beginPath();
+      context.fillStyle = '#8B0000';
+      context.arc(100, -600, 45, 0, Math.PI * 2);
+      context.fill();
+		
+
+	</script>
+</body>
+</html>
